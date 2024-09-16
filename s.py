@@ -61,7 +61,7 @@ class MyWidget(QtWidgets.QWidget):
 
         img = PIL.Image.open('screenshot.png')
         model = genai.GenerativeModel('gemini-1.5-flash')
-        response = model.generate_content(["Give me only correct option name", img], stream=True)
+        response = model.generate_content(["YOUR PROMPT", img], stream=True)
         response.resolve()
         
         response_text = response.text
@@ -78,7 +78,7 @@ def print_colored_response(text):
         if is_question:
             print(f'{yellow}{line}{endc}')
             is_question = False
-        elif '**' in line:  # Correct option (assuming correct option is enclosed in **)
+        elif '**' in line:  
             line = line.replace('**', f'{green}') + endc
             print(line)
         else:
