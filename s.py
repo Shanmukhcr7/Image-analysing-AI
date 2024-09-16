@@ -10,7 +10,7 @@ import google.generativeai as genai
 # Set gRPC logging level to suppress initial warnings
 os.environ['GRPC_VERBOSITY'] = 'ERROR'
 
-genai.configure(api_key="AIzaSyAxzFmecihVD5WaVLxh810-Z1mUYdL7D_o")
+genai.configure(api_key="YOUR GEMINI API KEY")
 
 class MyWidget(QtWidgets.QWidget):
     def __init__(self):
@@ -90,5 +90,3 @@ if __name__ == '__main__':
     window.show()
     app.aboutToQuit.connect(app.deleteLater)
     sys.exit(app.exec_())
-
-#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
