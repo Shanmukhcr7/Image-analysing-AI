@@ -13,5 +13,5 @@ This is for the taking screenshot on your screen and you have to select the area
 
 **Don't Forget**
 1. **REPLACE YOUR GEMINI API KEY WITH YOUR KEY**
-2. **PUT YOUR PROMPT IN THE LINE 69**
+2. **PUT YOUR PROMPT IN THE LINE 64**
 3. **PUT THE MAIN FILE IN THE ONE FOLDER**
